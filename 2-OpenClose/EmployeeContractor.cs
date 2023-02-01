@@ -2,9 +2,9 @@ namespace OpenClose
 {
       // EmployeeFullTime: Employees esto significa que EmployeeFullTime hereda de 
       //Employees, que es una clase abstracta.
-      public class EmployeeFullTime : Employees
+      public class EmployeeContractor : Employees
       {
-            public EmployeeFullTime(string fullname, int hoursWorked)
+            public EmployeeContractor(string fullname, int hoursWorked)
             {
                   Fullname = fullname;
                   HoursWorked = hoursWorked;
@@ -12,7 +12,7 @@ namespace OpenClose
 
             public override decimal CalculateSalaryMonthly()
             {
-                  decimal hourValue = 30000M;
+                  decimal hourValue = 10000M;
                   decimal salary = hourValue * HoursWorked;
 
                   return salary;
